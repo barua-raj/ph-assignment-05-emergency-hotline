@@ -1,0 +1,19 @@
+.btn-copy:hover {
+	background: #404040;
+	color: #FFFFFF;
+	transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+}
+.btn-call:hover {
+	background: #bfbfbf;
+	transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+}
+.btn-clear:hover {
+	background: #bfbfbf;
+	transition-delay: 0.2s;
+	-webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+}
