@@ -53,3 +53,15 @@ for (const btn of callHistoryButtons) {
     });
 }
 }
+
+// copy count
+const copyCount = parseInt(document.getElementById('copy-count').innerText);
+let initialCopycount = copyCount;
+const btnCopy = document.getElementsByClassName('btn-copy');
+for (const btn of btnCopy) {
+    btn.addEventListener('click', function(){
+        initialCopycount = initialCopycount + 1;
+        document.getElementById('copy-count').innerText = initialCopycount;
+        return;
+    })
+}
