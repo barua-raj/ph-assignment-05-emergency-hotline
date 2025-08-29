@@ -60,8 +60,12 @@ let initialCopycount = copyCount;
 const btnCopy = document.getElementsByClassName('btn-copy');
 for (const btn of btnCopy) {
     btn.addEventListener('click', function(){
+        const selectedCard = btn.closest('.card');
+        const serviceNumber = selectedCard.getElementsByClassName('service-number')[0];
+        const finalServiceNumber = serviceNumber.textContent;
         initialCopycount = initialCopycount + 1;
         document.getElementById('copy-count').innerText = initialCopycount;
+        alert(`Number Copied: ${finalServiceNumber}`);
         return;
     })
 }
